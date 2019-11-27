@@ -1,0 +1,7 @@
+-- Essas linhas devem estar em um arquivo separado
+-- File: meu_pkg.vhd
+PACKAGE meu_pkg IS
+	CONSTANT Nbit : NATURAL := 2;
+	TYPE array1Dx1D IS ARRAY (NATURAL RANGE <>) OF bit_vector(Nbit - 1 DOWNTO 0);
+	TYPE array2D IS ARRAY (NATURAL RANGE <>, NATURAL RANGE <>) OF BIT;
+END PACKAGE;
