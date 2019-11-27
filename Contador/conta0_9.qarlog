@@ -1,0 +1,18 @@
+Quartus II Archive log --	/home/osvaldo.sn/DLP1/Aula28-contador/conta0_9.qarlog
+
+Archive:	/home/osvaldo.sn/DLP1/Aula28-contador/conta0_9.qar
+Date:		Mon Oct 21 10:53:58 2019
+Quartus II 32-bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+
+	=========== Files Selected: ===========
+/home/osvaldo.sn/DLP1/Aula28-contador/bin2ssd.vhd
+/home/osvaldo.sn/DLP1/Aula28-contador/conta0_9.qpf
+/home/osvaldo.sn/DLP1/Aula28-contador/conta0_9.qsf
+/home/osvaldo.sn/DLP1/Aula28-contador/conta0_n.vhd
+/home/osvaldo.sn/DLP1/Aula28-contador/incremental_db/compiled_partitions/conta0_9.db_info
+/home/osvaldo.sn/DLP1/Aula28-contador/timer0_9.vhd
+/opt/altera/13.0sp1/quartus/linux/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

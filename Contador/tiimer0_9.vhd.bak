@@ -1,0 +1,65 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity bin2ssd is
+	port
+	(
+		clk_1sec  	:	in std_logic;
+		rst			: 	in std_logic;
+		ssd_out		: 	out std_logic_vector (6 downto 0)	
+	);
+end entity;
+
+
+architecture IFSC_V1 of bin2ssd is
+	
+	--declaraçao dos sinais
+	signal tipo_s 	: std_logic;
+	signal bin0_9 	:	std_logic_vector (3 downto 0);
+	
+	--declaracao dos componentes
+	component conta0_n is
+		generic
+		(
+		-- para contagem ate 10
+			n_bit : natural := 4;
+			n_count : natural := 10
+	
+		--para contagem ate 5000000
+		--	n_bit : natural := 26;
+		--	n_count : natural := 50000000
+		);
+
+		port
+		(
+			rst, clk :in std_logic;
+			q	: out std_logic_vector (n_bit-1 downto 0)
+		);
+	end component;
+	
+	
+	component bin2ssd is
+		port
+		(
+			tipo 	:  in bit; --0 catodo comum, 1 anodo comum
+			bin 	:	in std_logic_vector (3 downto 0);
+			ssd	: 	out std_logic_vector (6 downto 0)	
+		);
+	end component;
+	
+begin
+
+	tipo_s <= '0';
+	
+	C1: bin2ssd port map (tipo_s, bin0_9, ssd_out);
+	
+	C2: conta0_n
+		generic map	( n_bit : natural := 4;	n_count : natural := 10 );
+		port (
+			rst => rst
+			clk => clk_1sec;
+			q	=> bin0_9
+		);
+	
+end architecture;
