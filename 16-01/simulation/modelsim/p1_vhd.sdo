@@ -1,0 +1,140 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EP1C3T100A8 Package TQFP100
+// 
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "p1")
+  (DATE "10/03/2019 11:52:53")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 32-bit")
+  (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "cyclone_asynch_io")
+    (INSTANCE \\a1\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (1469:1469:1469) (1469:1469:1469))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_io")
+    (INSTANCE \\a0\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (1475:1475:1475) (1475:1475:1475))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_lcell")
+    (INSTANCE \\d0\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2088:2088:2088) (2088:2088:2088))
+        (PORT datad (5448:5448:5448) (5448:5448:5448))
+        (IOPATH dataa combout (590:590:590) (590:590:590))
+        (IOPATH datad combout (114:114:114) (114:114:114))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_lcell")
+    (INSTANCE \\d2\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2085:2085:2085) (2085:2085:2085))
+        (PORT datad (5444:5444:5444) (5444:5444:5444))
+        (IOPATH dataa combout (590:590:590) (590:590:590))
+        (IOPATH datad combout (114:114:114) (114:114:114))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_lcell")
+    (INSTANCE \\d2\~1\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2086:2086:2086) (2086:2086:2086))
+        (PORT datad (5443:5443:5443) (5443:5443:5443))
+        (IOPATH dataa combout (590:590:590) (590:590:590))
+        (IOPATH datad combout (114:114:114) (114:114:114))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_lcell")
+    (INSTANCE \\d2\~2\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2087:2087:2087) (2087:2087:2087))
+        (PORT datad (5447:5447:5447) (5447:5447:5447))
+        (IOPATH dataa combout (590:590:590) (590:590:590))
+        (IOPATH datad combout (114:114:114) (114:114:114))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_io")
+    (INSTANCE \\d0\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1092:1092:1092) (1092:1092:1092))
+        (IOPATH datain padio (2124:2124:2124) (2124:2124:2124))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_io")
+    (INSTANCE \\d1\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2445:2445:2445) (2445:2445:2445))
+        (IOPATH datain padio (2108:2108:2108) (2108:2108:2108))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_io")
+    (INSTANCE \\d2\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1474:1474:1474) (1474:1474:1474))
+        (IOPATH datain padio (2124:2124:2124) (2124:2124:2124))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone_asynch_io")
+    (INSTANCE \\d3\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2317:2317:2317) (2317:2317:2317))
+        (IOPATH datain padio (2124:2124:2124) (2124:2124:2124))
+      )
+    )
+  )
+)
